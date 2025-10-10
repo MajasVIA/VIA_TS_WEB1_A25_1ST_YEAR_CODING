@@ -1,0 +1,191 @@
+  <!-- basic html syntax :
+        
+        alt: A text description of the image. For example: alt="The Firefox icon"
+        
+        anchor: <a> Anchors enclose text and turn them into links.
+        fx: <a href=https://www.mozilla.org/>favorite website</a>
+
+        <blockquote>: Den viser teksten med indrykning (typisk lidt til højre i browseren).
+        Den fortæller søgemaskiner og skærmlæsere, at dette er et citat.
+        Du kan også tilføje, hvor citatet kommer fra med attributten cite.
+        i browseren vil det se sådan ud: 
+        Her er et længere citat med <blockquote>:
+            "Den, der aldrig har begået en fejl, har aldrig prøvet noget nyt."
+
+        <body></body>: The <body> element. This contains all the content that displays 
+        on the page, including text, images, videos, games, playable audio tracks, 
+        or whatever else.
+
+        <cite>: <cite> betyder “citation” (henvisning) — og bruges i HTML til at angive titlen 
+        eller kilden til et værk, fx en bog, film, artikel, sang, maleri eller person, der 
+        bliver citeret.
+        f.eks: 
+        <p>Min yndlingsbog er <cite>Harry Potter og De Vises Sten</cite> af J.K. Rowling.</p>
+        Browseren viser normalt <cite> med kursiv tekst, sådan her:
+        Min yndlingsbog er Harry Potter og De Vises Sten af J.K. Rowling.    
+
+        Comments: write <!-- to start a comment. or ctrl + '' to make a comment for more lines 
+        than one 
+
+        disabled: You use this to disable the form input elements so the 
+        user can't make entries
+        for example: <input type="text" disabled="disabled" />
+        
+        <!doctype html>: The doctype. When HTML was young (1991-1992), 
+        doctypes were meant to act as links to a set of rules that the 
+        HTML page had to follow to be considered good HTML.
+        More recently, the doctype is a historical artifact that needs to 
+        be included for everything else to work right. <!doctype html>
+        
+        <em> and <i>: making the text stand out by making it italic
+
+        <h1>: Each heading has to be wrapped in a heading element. There are six 
+        heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a 
+        different level of content in the document; <h1> represents the main heading, 
+        <h2> represents subheadings, <h3> represents sub-subheadings, and so on.
+
+        <head></head>: The <head> element. This element acts as a container for 
+        everything you want to include on the HTML page, that isn't the content 
+        the page will show to viewers. This includes keywords and a page 
+        description that would appear in search results, CSS to style content, 
+        character set declarations, and more. You will learn more about this in 
+        the next article of the series.
+
+        height: The height of the image in pixels. For example: height="300"
+        
+        <html></html>: The <html> element. This element wraps all the content on the page. 
+        It is sometimes known as the root element.
+
+        <i>: element represents a range of text that is set off from the normal text for 
+        some reason, such as idiomatic text
+ 
+        List (ordered): Unordered lists are used to mark up lists of items for which the 
+        order of the items doesn't matter. Let's take a grocery shopping list as an example:
+        <ul>
+            <li>milk</li>
+            <li>sugar</li>
+            <li>eggs</li>
+        </ul>
+
+        list (unordered): Ordered lists are lists in which the order of the items does matter.
+        Let's take a set of directions as an example:
+        <ol>
+            <li>milk</li>
+            <li>sugar</li>
+            <li>eggs</li>
+        </ol>
+       
+        list (nested): It is perfectly OK to nest one list inside another one. 
+        You might want to have some sub-bullets sitting below a top-level bullet. 
+        Let's take the second list from our recipe example:
+        <ul>
+          <li>Frugter
+              <ul>
+                <li>Æbler</li>
+                <li>Bananer</li>
+                <li>Appelsiner</li>
+              </ul>
+          </li>
+           <li>Grøntsager
+              <ul>
+                <li>Gulerødder</li>
+                <li>Broccoli</li>
+                <li>Kartofler</li>
+              </ul>
+          </li>
+       </ul>
+        
+       Frugter
+       - Æbler
+       - Bananer
+       - Appelsiner
+       Grøntsager
+       - Gulerødder
+       - Broccoli
+       - Kartofler
+
+        list ( description): The purpose of description lists is to mark up a set of items and 
+        their associated descriptions, such as terms and definitions, or questions and answers. 
+        Let's look at an example of a set of terms and definitions:
+        <dl>
+            <dt>HTML</dt>
+            <dd>Et sprog til at strukturere indhold på websider.</dd>
+
+            <dt>CSS</dt>
+            <dd>Et sprog til at style og designe websider.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Et sprog der gør websider interaktive.</dd>
+        </dl>
+        sådan ser det ud: 
+        HTML
+        Et sprog til at strukturere indhold på websider.
+
+        CSS
+        Et sprog til at style og designe websider.
+
+        JavaScript
+        Et sprog der gør websider interaktive.
+
+        <dl>	Description List – hele listen
+        <dt>	Description Term – det ord/begreb du beskriver
+        <dd>	Description Definition – forklaringen på begrebet
+        
+        <meta charset="utf-8">: The <meta> element. This element represents metadata that 
+        cannot be represented by other HTML meta-related elements, like <base>, <link>, 
+        <script>, <style> or <title>. The charset attribute specifies the character encoding 
+        for your document as UTF-8, which includes most characters from the vast majority 
+        of human written languages. With this setting, the page can now handle any textual 
+        content it might contain. There is no reason not to set this, and it can help avoid 
+        some problems later.
+
+        <p>: In HTML, each paragraph has to be wrapped in a <p> element, like so:
+
+        <q>: betyder “quote” og bruges i HTML til korte citater — altså citater midt i en 
+        sætning, i modsætning til <blockquote>, som bruges til længere citater i egne afsnit.
+        f.eks:   
+        <p>Albert Einstein sagde: <q>Fantasi er vigtigere end viden.</q></p>    
+        Albert Einstein sagde: “Fantasi er vigtigere end viden.”
+
+
+        <Span>:This is a <span> element. It has no semantics. You use it to wrap content when 
+        you want to apply CSS to it (or do something to it with JavaScript) without giving it 
+        any extra meaning.The <span> HTML element is a generic inline container for phrasing 
+        content, which does not inherently represent anything. It can be used to group elements 
+        for styling purposes (using the class or id attributes), or because they share attribute 
+        values, such as lang. It should be used only when no other semantic element is appropriate. 
+        <span> is very much like a <div> element, but <div> is a block-level element whereas a 
+        <span> is an inline-level element.
+        <span> i CSS: <p> jeg <span style="Color:blue; font-weight:bold;"elsker</span> HTML!<p>
+        i CSS bliver teksten "elsker" nu blå og fed. 
+        <span> i java. detkan bruges til at ændre eller finde et bestemt stykke tekst i 
+        JavaScript-kode. i Java ændre eller reagerer <span> på et bestemt stykke tekst. 
+        f.eks: 
+        <p id="tekst">Hej <span style='color:red;'>verden</span></p>
+        <script>document.getElementById("tekst").innerHTML = "Hej <span style='color:blue;'
+        >verden</span>";</script>  
+        først vises teksten Hej verden hvor ordet verden er rød. derefter
+        kører JavaScript linjen som ændrer farven til blå ved at udskifte HTML-indholdet.
+
+
+        Special characters: if you want to print special characters you have to use characters
+        reference: < = &lt;    > = &gt;   "" = &quot;  '' = &apos;   & = &amp; 
+        
+        src: A required attribute that specifies the location of the image. 
+        
+        <strong> and <b>: makes the text in bold
+
+        <title></title>: The <title> element. This sets the title of the page, which is the 
+        title that appears in the browser tab the page is loaded in. The page title is 
+        also used to describe the page when it is bookmarked.
+        
+        <u>: make the text underlined
+
+        Whitespace: No matter how much whitespace you use inside HTML element content, 
+        the HTML parser reduces each sequence of whitespace to a single space when 
+        rendering the code. So why use so much whitespace? The answer is readability in the code
+
+        width: The width of the image in pixels. For example: width="300".
+       
+        https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Advanced_text_features
+        -->
