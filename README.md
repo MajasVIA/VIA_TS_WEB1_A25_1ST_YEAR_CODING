@@ -1,4 +1,4 @@
-# VIA_TS_WEB1_A25_1ST_YEAR — Web Development (1st Year)
+# VIA_TS_WEB1_A25_1ST_YEAR_CODING — Web Development (1st Year)
 
 This repository contains exercises and projects from the **Web Development (WEB1)** course  
 at VIA University College. The course introduces the fundamental technologies of the web —  
