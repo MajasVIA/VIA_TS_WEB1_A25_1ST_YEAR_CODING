@@ -1,0 +1,127 @@
+<!--
+In CSS, inheritance controls what happens 
+when no value is specified for a property on an 
+element.
+
+CSS properties can be categorized in two types:
+
+- inherited properties, which by default are set 
+to the computed value of the parent element
+- non-inherited properties, which by default are 
+set to initial value of the property 
+
+----------------------------------------------
+Inherited properties — simple explanation:
+
+When an element doesn’t have its own value for 
+a certain CSS property,
+it inherits that value from its parent element 
+(the element it’s inside).
+
+💡 Example:
+If you set color: blue; on the <body>,
+then all the text inside the body will also be 
+red — unless you change it somewhere else.
+
+Only the root element (<html>) gets the browser’s
+default (initial) values.
+
+Example: 
+CSS:
+-->
+
+p {
+  color: blue;
+}
+
+<HTML>:
+<p>This paragraph has <em>emphasized text</em> 
+in it.</p>
+
+<!--The words "emphasized text" will appear blue,
+since the em element has inherited the value of 
+the color property from the p element.-->
+
+----------------------------------------------
+
+<!--Non-inherited properties — simple explanation
+
+When an element doesn’t have its own value for a 
+non-inherited property,
+it does not take the value from its parent.
+Instead, it uses the default (initial) value that 
+the browser gives it.
+
+💡 Example:
+The border property is not inherited.
+So if you add a border to the <body>,
+the elements inside it (like <p> or <h1>) won't 
+automatically get a border too.
+
+css: 
+p {
+  border: medium solid;
+}
+
+-->
+HTML: 
+<p>This paragraph has <em>emphasized text</em> 
+in it.</p>
+
+<!--
+The words "emphasized text" will not have another 
+border (since the initial value of border-style 
+is none). -->
+
+---------------------------------------------------
+
+<!--
+The inherit keyword: 
+allows authors to explicitly specify inheritance. 
+It works on both inherited and non-inherited 
+properties.
+
+You can control inheritance for all properties at 
+once using the all shorthand property, which 
+applies its value to all properties. 
+For example:
+
+CSS:
+p {
+  all: revert;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+This reverts the style of the paragraphs' 
+font property to the user agent's default 
+unless a user stylesheet exists, in which case 
+that is used instead. Then it doubles the font 
+size and applies a font-weight of "bold".
+-->
+-----------------------------------------------
+
+<!--
+Overriding inheritance, an example
+Using our previous example with border, 
+if we explicitly set the inheritance with inherit,
+we get the following:
+
+CSS:
+p {
+  border: medium solid;
+}
+
+em {
+  border: inherit;
+}
+
+HTML: -->
+
+<p>This paragraph has <em>emphasized text</em> in 
+it.</p>
+
+<!--We can see here another border around the 
+word "emphasized text".--> 
+
+---------------------------------------------------

@@ -1,0 +1,79 @@
+/*Next we'll look at how to work with 
+colors in CSS. We'll cover three popular 
+color formats: 
+- RGB, 
+- hex and 
+- HSL. 
+You'll also 
+get a quick intro to 
+hexadecimal numbers along the way.*/
+-------------------------------------------------
+
+/*RGB stands for Red-Green_blue
+it goes from 0 to 255 possibilities:
+
+example: 
+rgb(red,green,blue)
+so 
+background: rgb(255,0,0); makes of course red.
+
+you can also use transparency, then you do like 
+this: 
+background: rgba(255,0,0,20); makes of course red.
+*/
+
+--------------------------------------------------
+
+/*However the most used is Hex color
+because they are very compact. 
+Hexa decimal system 0-9 a-f 
+
+red look like this: 
+background: #ff0000; 
+
+green color look like this: 
+background: #00ff00;
+
+blue color look like this: 
+background: #0000ff;
+
+a dark blue look like this: 
+background: #000033;
+
+white color look like this: 
+background: #ffffff;
+
+the format goes like this:
+background: #aabbcc;
+which means white also can just be
+written: 
+background: #fff;
+*/
+
+-------------------------------------------------
+/*
+HSL is put to a colorwheel 
+you can change the hue, saturation, and the light.
+the hue: 
+0 deg = red 
+60 deg = orange
+90 deg = yellow 
+120 deg = grøn
+180 deg = tyrkis
+240 deg = blå 
+300 deg = lilla 
+the saturation: 100% is the whole color
+the light: 0% = black, 100% is white
+background: hsl(degree,saturation, light) 
+
+example: 
+background: hsl(90,100%, 40%)
+
+you can also use transparency: 
+then you do like this: 
+background: hsla(degree,saturation, light, transparancy)
+example: background: hsla(0,0%,0%,20%)
+
+------------------------------------------------
+for more help picking colors, go to coolers.co
+for more help on colors, go to https://web.dev/learn/css/color
