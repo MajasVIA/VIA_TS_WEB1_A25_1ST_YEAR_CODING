@@ -61,7 +61,8 @@ Open the project in Visual Studio Code
 Right-click on your .html file → select “Open with Live Server”
 (or use the VS Code extension “Live Server”)
 
-The website will open in your default browser, but are best viewed in Opera
+The website will open in your default browser — best viewed in Opera 
+(some browsers like Edge may apply automatic dark mode)
 
 Edit and save any .html or .css file — the page reloads automatically
 
