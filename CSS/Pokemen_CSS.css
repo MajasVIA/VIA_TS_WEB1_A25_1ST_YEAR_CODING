@@ -1,0 +1,21 @@
+table {
+  border: 1px solid white;
+  /*sørger for der kun er en border og ikke to*/
+  border-collapse: collapse;
+  /*Sørger for at teksten står i midten af 
+  cellerne*/
+  text-align: center;
+  /*at vælge font*/
+  font-family: Lucida Sans;
+  /*vælge font size: 1rem is the default size. 
+  most pages uses 1rem which is the same as 16px */
+  font-size: 4rem;
+}
+
+th,
+td {
+  /*giver cellerne en grænse*/
+  border: 1px solid white;
+  /*give cellerne noget padding */
+  padding: 4px;
+}

@@ -1,0 +1,51 @@
+h1 {
+  color: brown;
+}
+
+h2 {
+  text-align: center;
+  /*to get distance between two 
+    "boxes* use padding:*/
+  padding: 8px;
+  border: 1px solid blue;
+}
+
+p {
+  /*this does so the text down overflow 
+    when changing the page size however it gets a 
+    scrollbar*/
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* resets default box sizing behavior. star means you select every 
+      single HTML elemen, box-sizing: border-box 
+      does that we no longer calculate the size of the 
+      content but the size of the box, box sizing 
+      is not a inheritable proberty, thats why we have
+      to use the star*/
+
+footer {
+  /*margin decides how much there are in the
+        sides. 18px is the top, 19xp is the right side,
+        20px is the buttom and 21px is the leftside */
+  margin: 18px 19px 20px 21px;
+  background: blue;
+  text-align: center;
+  padding: 8px;
+  border: 10px solid white;
+  border-top: 10px dotted purple;
+}
+
+h1 {
+  /*22px is the vertical margin and 23px is 
+        the horisontal margin */
+  margin: 22px 23px;
+}
+/*margin
+border 
+padding
+content 
+*/

@@ -30,21 +30,19 @@ Example:
 CSS:
 -->
 
-p {
-  color: blue;
-}
+p { color: blue; }
 
-<HTML>:
-<p>This paragraph has <em>emphasized text</em> 
-in it.</p>
+<html>
+  :
+  <p>This paragraph has <em>emphasized text</em> in it.</p>
 
-<!--The words "emphasized text" will appear blue,
+  <!--The words "emphasized text" will appear blue,
 since the em element has inherited the value of 
 the color property from the p element.-->
 
-----------------------------------------------
+  ----------------------------------------------
 
-<!--Non-inherited properties — simple explanation
+  <!--Non-inherited properties — simple explanation
 
 When an element doesn’t have its own value for a 
 non-inherited property,
@@ -64,18 +62,17 @@ p {
 }
 
 -->
-HTML: 
-<p>This paragraph has <em>emphasized text</em> 
-in it.</p>
+  HTML:
+  <p>This paragraph has <em>emphasized text</em> in it.</p>
 
-<!--
+  <!--
 The words "emphasized text" will not have another 
 border (since the initial value of border-style 
 is none). -->
 
----------------------------------------------------
+  ---------------------------------------------------
 
-<!--
+  <!--
 The inherit keyword: 
 allows authors to explicitly specify inheritance. 
 It works on both inherited and non-inherited 
@@ -99,9 +96,9 @@ unless a user stylesheet exists, in which case
 that is used instead. Then it doubles the font 
 size and applies a font-weight of "bold".
 -->
------------------------------------------------
+  -----------------------------------------------
 
-<!--
+  <!--
 Overriding inheritance, an example
 Using our previous example with border, 
 if we explicitly set the inheritance with inherit,
@@ -118,10 +115,10 @@ em {
 
 HTML: -->
 
-<p>This paragraph has <em>emphasized text</em> in 
-it.</p>
+  <p>This paragraph has <em>emphasized text</em> in it.</p>
 
-<!--We can see here another border around the 
-word "emphasized text".--> 
+  <!--We can see here another border around the 
+word "emphasized text".-->
 
----------------------------------------------------
+  ---------------------------------------------------
+</html>

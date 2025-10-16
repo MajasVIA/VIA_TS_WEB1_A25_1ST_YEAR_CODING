@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors and Specificity</title>
+    <!--dette linker de to sider sammen:-->
+    <link rel="stylesheet" href="Several_elements_same_colors.css" />
+  </head>
+  <body>
+    <!--id bliver brugt når man vil have
+    at et bestemt element i tabellen
+    har en anden farve etc, foo er et
+    tilfældigt navn man selv finder på, 
+    husk at sætte # ind i css filen-->
+    <h1 id="foo">Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+
+    <!--når man gerne vil have at flere 
+   elementer skifter farve, bruger man Class
+   istedet-->
+    <h1 class="baz">Heading 1</h1>
+    <h1 class="baz">Heading 2</h1>
+    <h1>Heading 3</h1>
+    <!--specificity, 
+  det kan jo hænde at et element er blevet sat 
+  til flere forskellige ting, i så fald vil den
+  vælge i denne rækkefølge hvad den skal vise:
+  1.inline
+  2.id
+  3.class
+  4.element
+  --></body>
+</html>
