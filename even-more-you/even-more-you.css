@@ -113,7 +113,7 @@ section {
 header {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 footer {
   text-align: center; /* centrerer tekst i top og bund */
