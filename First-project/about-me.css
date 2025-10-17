@@ -8,6 +8,6 @@ header {
   background: rgb(173, 173, 231);
   text-align: center;
   padding: 8px;
-  border: 60px solid white;
+  border: 10px solid white;
   border-top: 10px dotted purple;
 }
