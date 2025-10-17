@@ -85,3 +85,25 @@ img {
   margin: 10px auto; /* centrerer billederne */
   border-radius: 6px; /* afrundede hjørner */
 }
+
+/* Fjern kanter på billedgalleriet og centrér billederne */
+table.gallery {
+  border-collapse: collapse;
+  width: auto;
+  margin: 20px auto;
+  background: transparent;
+  box-shadow: none;
+}
+
+table.gallery td {
+  border: none; /* ingen kant omkring billeder */
+  padding: 10px;
+  text-align: center;
+}
+
+table.gallery img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 6px; /* bløde hjørner */
+}
