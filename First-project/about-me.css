@@ -1,4 +1,13 @@
 body {
-  background-color: #9FFCFD; /* svarer til bgcolor */
-  color: #ffffff;            /* svarer til text */
+  background-color: #9ffcfd; /* svarer til bgcolor */
+  color: #ffffff; /* svarer til text */
+}
+
+header {
+  margin: 18px 19px 20px 21px;
+  background: blue;
+  text-align: center;
+  padding: 8px;
+  border: 10px solid white;
+  border-top: 10px dotted purple;
 }

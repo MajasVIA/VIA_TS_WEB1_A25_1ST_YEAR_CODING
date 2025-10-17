@@ -11,7 +11,7 @@ h2 {
 }
 
 p {
-  /*this does so the text down overflow 
+  /*this does so the text dont overflow 
     when changing the page size however it gets a 
     scrollbar*/
   overflow: auto;
