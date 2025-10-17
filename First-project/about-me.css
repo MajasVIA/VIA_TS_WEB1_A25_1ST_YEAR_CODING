@@ -4,10 +4,9 @@ body {
 }
 
 header {
-  margin: 18px 19px 20px 21px;
+  margin: 20px 20px 20px 20px;
   background: rgb(173, 173, 231);
   text-align: center;
   padding: 8px;
-  border: 10px solid white;
-  border-top: 10px dotted purple;
+  border: 5px solid white;
 }
