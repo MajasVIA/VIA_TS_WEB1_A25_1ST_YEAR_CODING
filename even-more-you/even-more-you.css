@@ -129,7 +129,7 @@ table.gallery {
   width: auto;
   margin: 20px auto;
   background: transparent;
-  box-shadow: no0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 table.gallery td {
