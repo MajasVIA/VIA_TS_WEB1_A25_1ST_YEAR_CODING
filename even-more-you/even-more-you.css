@@ -26,3 +26,38 @@ a:hover {
   color: #004080; /* mørkere blå når man holder musen over */
   text-decoration: underline; /* tilføjer understregning ved hover */
 }
+
+/* Trin 3: typografi og afstande */
+h1 {
+  font-size: 2.2em; /* stor, tydelig overskrift */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.6em; /* lidt mindre overskrift */
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em; /* lidt større end standard tekst */
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse; /* fjerner dobbeltkanter */
+  width: 100%; /* tabel fylder hele bredden */
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc; /* tynde, lyse grå linjer */
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #e8eef5; /* svag baggrund til tabeloverskrifter */
+}
