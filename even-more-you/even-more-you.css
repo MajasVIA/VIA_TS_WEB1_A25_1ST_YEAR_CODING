@@ -110,7 +110,11 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* blød skygge for dybde */
 }
 
-header,
+header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 footer {
   text-align: center; /* centrerer tekst i top og bund */
   margin-top: 20px;
