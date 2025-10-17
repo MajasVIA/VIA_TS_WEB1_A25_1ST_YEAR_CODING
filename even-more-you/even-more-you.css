@@ -1,3 +1,38 @@
+/* Trin 5 – professionel navigation i afdæmpede farver */
+nav {
+  background-color: #333; /* mørk grå baggrund */
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  padding: 12px 24px; /* knapform */
+  color: #222; /* mørk tekst på lys baggrund */
+  background-color: #e0e0e0; /* lys grå knapper */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px; /* let runding */
+  margin: 5px; /* lidt afstand mellem knapperne */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ccc; /* lidt mørkere ved hover */
+  color: #000; /* lidt mørkere tekstfarve */
+}
+
 body {
   background-color: #f5f7fa;
   color: #222;
@@ -29,19 +64,19 @@ a:hover {
 
 /* Trin 3: typografi og afstande */
 h1 {
-  font-size: 2.2em; /* stor, tydelig overskrift */
+  font-size: 2rem; /* stor, tydelig overskrift */
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 1.6em; /* lidt mindre overskrift */
+  font-size: 1.5rem; /* lidt mindre overskrift */
   margin-top: 25px;
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 1.1em; /* lidt større end standard tekst */
+  font-size: 1.1rem; /* lidt større end standard tekst */
   margin-bottom: 15px;
 }
 
