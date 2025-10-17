@@ -1,11 +1,11 @@
 /* Trin 5 – professionel navigation i afdæmpede farver */
 nav {
-  background-color: #f0f2f5; /* mørk grå baggrund */
+  background-color: #dfe6e9; /* mørk grå baggrund */
   text-align: center;
   padding: 10 px 0;
   margin-bottom: 20px;
   border-radius: 8px; /* let runding */
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #b0bec5;
 }
 
 nav ul {
