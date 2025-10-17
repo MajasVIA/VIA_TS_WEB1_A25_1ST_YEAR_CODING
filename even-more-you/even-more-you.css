@@ -159,3 +159,19 @@ table.gallery img {
   height: 200px;
   border-radius: 8px; /* bløde hjørner */
 }
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+section,
+footer .card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 20px;
+}
