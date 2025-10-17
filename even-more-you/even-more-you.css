@@ -61,3 +61,27 @@ td {
 th {
   background-color: #e8eef5; /* svag baggrund til tabeloverskrifter */
 }
+
+/* Trin 4: centrering og layout */
+main,
+section {
+  max-width: 900px; /* gør at teksten ikke bliver for bred på store skærme */
+  margin: 0 auto; /* centrerer indholdet vandret */
+  padding: 20px; /* luft inde i sektionen */
+  background-color: #ffffff; /* hvid baggrund omkring indholdet */
+  border-radius: 8px; /* let afrunding i hjørnerne */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* blød skygge for dybde */
+}
+
+header,
+footer {
+  text-align: center; /* centrerer tekst i top og bund */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block; /* fjerner mellemrum under billeder */
+  margin: 10px auto; /* centrerer billederne */
+  border-radius: 6px; /* afrundede hjørner */
+}
