@@ -104,7 +104,7 @@ main,
 section {
   max-width: 900px; /* gør at teksten ikke bliver for bred på store skærme */
   margin: 20px auto; /* centrerer indholdet vandret */
-  padding: 10px 16px 1px 16px; /* top, højre, bund, venstre */
+  padding: 10px 16px 0 16px; /* top, højre, bund, venstre */
   background-color: #fff; /* hvid baggrund omkring indholdet */
   border-radius: 8px; /* let afrunding i hjørnerne */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* blød skygge for dybde */
