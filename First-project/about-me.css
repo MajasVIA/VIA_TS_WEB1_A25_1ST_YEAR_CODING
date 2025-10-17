@@ -5,9 +5,9 @@ body {
 
 header {
   margin: 18px 19px 20px 21px;
-  background: blue;
+  background: rgb(173, 173, 231);
   text-align: center;
   padding: 8px;
-  border: 10px solid white;
+  border: 60px solid white;
   border-top: 10px dotted purple;
 }
