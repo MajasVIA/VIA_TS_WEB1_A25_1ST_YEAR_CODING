@@ -6,3 +6,23 @@ body {
   margin: 0;
   padding: 0 20px;
 }
+
+/* Trin 2: farver til overskrifter og links */
+h1,
+h2,
+h3 {
+  color: #003366; /* mørk blå – giver et professionelt udtryk */
+}
+
+/* Links i normal tilstand */
+a {
+  color: #0066cc; /* klar blå */
+  text-decoration: none; /* fjerner understregning */
+  font-weight: bold; /* gør links mere synlige */
+}
+
+/* Når musen holdes over link */
+a:hover {
+  color: #004080; /* mørkere blå når man holder musen over */
+  text-decoration: underline; /* tilføjer understregning ved hover */
+}
