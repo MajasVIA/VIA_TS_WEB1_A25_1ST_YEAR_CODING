@@ -35,6 +35,17 @@ nav a:hover {
   color: #000; /* lidt mørkere tekstfarve */
 }
 
+/* Titel over navigation */
+.site-title {
+  text-align: center;
+  font-size: 1.5rem; /* lidt større end normal tekst */
+  color: #003366; /* samme mørkeblå som dine overskrifter */
+  margin-top: 15px; /* luft over */
+  margin-bottom: 10px; /* lidt luft ned til navigation */
+  font-weight: bold;
+  letter-spacing: 0.5px; /* giver lidt luft mellem bogstaver */
+}
+
 body {
   background-color: #f5f7fa;
   color: #222;
