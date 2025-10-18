@@ -133,10 +133,12 @@ img {
   display: block; /* fjerner mellemrum under billeder */
   margin: 10px auto; /* centrerer billederne */
   border-radius: 8px; /* afrundede hjørner */
+  max-width: 100%;
+  height: auto;
 }
 
 /* Fjern kanter på billedgalleriet og centrér billederne */
-table.gallery {
+section table {
   border-collapse: collapse;
   width: auto;
   margin: 20px auto;
@@ -144,13 +146,13 @@ table.gallery {
   box-shadow: none;
 }
 
-table.gallery td {
+section table td {
   border: none; /* ingen kant omkring billeder */
   padding: 10px;
   text-align: center;
 }
 
-table.gallery img {
+section table img {
   display: block;
   margin: 0 auto;
   height: 200px;
