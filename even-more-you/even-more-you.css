@@ -1,6 +1,6 @@
 /* Trin 5 – professionel navigation i afdæmpede farver */
 nav {
-  background-color: #9adcf8; /* mørk grå baggrund */
+  background-color: hsl(197, 86%, 77%); /* mørk grå baggrund */
   text-align: center;
   padding: 5 px 0;
   margin-bottom: 0px;
@@ -28,7 +28,7 @@ nav a {
   display: inline-block;
   padding: 12px 24px; /* knapform */
   color: #222; /* mørk tekst på lys baggrund */
-  background-color: #0ad3f7; /* lys grå knapper */
+  background-color: hsl(0, 0%, 88%); /* lys grå knapper */
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px; /* let runding */
@@ -53,9 +53,9 @@ nav a:hover {
 }
 
 body {
-  background-color: #dee6ee;
-  color: #222;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: rgb(222, 230, 238);
+  color: hsl(0, 0%, 13%);
+  font-family: "Segoe UI";
   line-height: 1.6;
   margin: 0;
   padding: 0 20px;
@@ -65,19 +65,19 @@ body {
 h1,
 h2,
 h3 {
-  color: #003366; /* mørk blå – giver et professionelt udtryk */
+  color: hsl(210, 100%, 20%); /* mørk blå – giver et professionelt udtryk */
 }
 
 /* Links i normal tilstand */
 a {
-  color: #0066cc; /* klar blå */
+  color: rgb(0, 102, 204); /* klar blå */
   text-decoration: none; /* fjerner understregning */
   font-weight: bold; /* gør links mere synlige */
 }
 
 /* Når musen holdes over link */
 a:hover {
-  color: #004080; /* mørkere blå når man holder musen over */
+  color: rgb(0, 64, 128); /* mørkere blå når man holder musen over */
   text-decoration: underline; /* tilføjer understregning ved hover */
 }
 
