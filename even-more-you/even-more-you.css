@@ -1,44 +1,50 @@
 /* Trin 5 – professionel navigation i afdæmpede farver */
 nav {
-  background-color: #dfe6e9; /* mørk grå baggrund */
+  background-color: #9adcf8; /* mørk grå baggrund */
   text-align: center;
   padding: 5 px 0;
   margin-bottom: 0px;
   border-radius: 8px; /* let runding */
-  border-bottom: 1px solid #b0bec5;
+  border-bottom: 1px solid #b3dbef;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex; /* gør at de står på én linje */
+  justify-content: center; /* centrer hele rækken */
+  flex-wrap: wrap; /* så de hopper pænt ned, hvis skærmen er for lille */
+  gap: 100px; /* afstand mellem hver gruppe */
 }
 
 nav li {
-  display: inline-block;
+  display: flex;
+  align-items: center; /* sikrer lodret justering */
+  white-space: nowrap; /* sørger for at teksten ikke brydes midt i “se min” */
 }
 
 nav a {
   display: inline-block;
   padding: 12px 24px; /* knapform */
   color: #222; /* mørk tekst på lys baggrund */
-  background-color: #e0e0e0; /* lys grå knapper */
+  background-color: #0ad3f7; /* lys grå knapper */
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px; /* let runding */
-  margin: 5px; /* lidt afstand mellem knapperne */
+  margin: 0 5px; /* lidt afstand mellem knapperne */
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  background-color: #ccc; /* lidt mørkere ved hover */
+  background-color: #5aaaf0; /* lidt mørkere ved hover */
   color: #000; /* lidt mørkere tekstfarve */
 }
 
 /* Titel over navigation */
 .site-title {
   text-align: center;
-  font-size: 1.5rem; /* lidt større end normal tekst */
+  font-size: 3rem; /* lidt større end normal tekst */
   color: #003366; /* samme mørkeblå som dine overskrifter */
   margin-top: 15px; /* luft over */
   margin-bottom: 10px; /* lidt luft ned til navigation */
@@ -125,6 +131,9 @@ header {
 }
 footer {
   text-align: center; /* centrerer tekst i top og bund */
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -156,15 +165,16 @@ section table img {
   display: block;
   margin: 0 auto;
   height: 200px;
-  border-radius: 8px; /* bløde hjørner */
+  border-radius: 40px; /* bløde hjørner */
 }
 
 section,
+.card,
 footer .card {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  background-color: #ffffff;
+  background-color: #c1edf5;
   padding: 20px;
 }
 
