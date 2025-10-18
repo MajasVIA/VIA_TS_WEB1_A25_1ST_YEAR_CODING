@@ -99,9 +99,9 @@ table {
   margin-top: 20px;
 }
 
-th,
-td {
-  border: 1px solid #ccc; /* tynde, lyse grå linjer */
+table.schedule th,
+table.schedule td {
+  border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
 }
@@ -166,4 +166,27 @@ footer .card {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
   padding: 20px;
+}
+
+/* Fotos-sektion: brug samme hvide kort-look (kommer fra 'section, footer, .card') */
+/* Overstyr tabel-stilen kun inde i denne sektion */
+.photos table {
+  border-collapse: separate;
+  border-spacing: 24px 0; /* luft mellem billederne */
+  width: 100%;
+  margin: 10px 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.photos td,
+.photos th {
+  border: none; /* fjern de grå linjer i billedtabellen */
+  padding: 0;
+  text-align: center;
+}
+
+/* Lidt luft under teksten i fotos-sektionen */
+.photos p {
+  margin-bottom: 12px;
 }
