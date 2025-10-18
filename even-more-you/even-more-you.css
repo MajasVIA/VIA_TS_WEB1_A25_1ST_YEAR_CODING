@@ -1,8 +1,10 @@
 * {
+  /*resets default box sizing behavior*/
   box-sizing: border-box;
 }
 
 nav {
+  /*make the first frames color and text */
   background-color: hsl(197, 86%, 77%); /* mørk grå baggrund */
   text-align: center;
   padding: 5 px 0;
@@ -11,195 +13,231 @@ nav {
   border-bottom: 1px solid #b3dbef;
 }
 
+/*makes the frames around the first three links*/
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* gør at de står på én linje */
-  justify-content: center; /* centrer hele rækken */
-  flex-wrap: wrap; /* så de hopper pænt ned, hvis skærmen er for lille */
-  gap: 100px; /* afstand mellem hver gruppe */
+  display: flex; /* Makes them stand on one line */
+  justify-content: center; /*center the content*/
+  flex-wrap: wrap; /* makes them compatible with small screen */
+  gap: 100px; /* makes a distance between each group of words*/
 }
 
+/*This is the three links*/
 nav li {
-  display: flex;
-  align-items: center; /* sikrer lodret justering */
-  white-space: nowrap; /* sørger for at teksten ikke brydes midt i “se min” */
+  display: flex; /* again makes them stand on one line */
+  align-items: center; /* makes a vertical change possible */
+  white-space: nowrap; /* makes sure it breaks the text the right place*/
 }
 
+/*this targets all the links/anchor elements inside a nav elemente*/
 nav a {
-  display: inline-block;
-  padding: 12px 24px; /* knapform */
-  color: #222; /* mørk tekst på lys baggrund */
-  background-color: hsl(0, 0%, 88%); /* lys grå knapper */
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px; /* let runding */
-  margin: 0 5px; /* lidt afstand mellem knapperne */
-  transition: background-color 0.3s, color 0.3s;
+  display: inline-block; /*this tells the browser that the element should have its own line*/
+  padding: 12px 24px; /* makes the buttons form */
+  color: #222; /* makes the dark text on a light background*/
+  background-color: hsl(0, 0%, 88%); /* decides the colors on the buttons*/
+  text-decoration: none; /*makes sure there is no underlining of the link*/
+  font-weight: bold; /*makes the text bold*/
+  border-radius: 8px; /* makes the borders on the frame with a light rounding*/
+  margin: 0 5px; /*gives a little distance between the buttons*/
+  transition: background-color 0.3s, color 0.3s; /*transition tells the browser some changes 
+  has to happen soft over time. background-color 0.3s means that the transition of the change 
+  in background-color has to happen in 0.3 seconds, color 0.3s means that the transition should take 0.3 s when the textcolor changes*/
 }
-
+/*decides whathappens when you hoover the mouse over the buttons*/
 nav a:hover {
-  background-color: #5aaaf0; /* lidt mørkere ved hover */
-  color: #000; /* lidt mørkere tekstfarve */
+  background-color: #5aaaf0; /* makes the background-color a little darker, 
+  when hoovering the mouse over the button*/
+  color: #000; /* makes a little darker text color when hoovering the mouse over the button*/
 }
 
-/* Titel over navigation */
+/* the title over the nav */
 .site-title {
-  text-align: center;
-  font-size: 3rem; /* lidt større end normal tekst */
-  color: #003366; /* samme mørkeblå som dine overskrifter */
-  margin-top: 15px; /* luft over */
-  margin-bottom: 10px; /* lidt luft ned til navigation */
-  font-weight: bold;
-  letter-spacing: 0.5px; /* giver lidt luft mellem bogstaver */
+  text-align: center; /*makes it centeret*/
+  font-size: 3rem; /* makes a bigger text*/
+  color: #003366; /* makes the headline dark blue*/
+  margin-top: 15px; /*makes the space over the headline*/
+  margin-bottom: 10px; /* distance between the headline and the nav*/
+  font-weight: bold; /*makes the text bold*/
+  letter-spacing: 0.5px; /* makes a little distance between the letters*/
 }
 
+/* body = controls the whole page. 
+   Everything inside <body> will be affected by these rules. */
 body {
-  background-color: rgb(222, 230, 238);
-  color: hsl(0, 0%, 13%);
-  font-family: "Segoe UI";
-  line-height: 1.6;
-  margin: 0;
-  padding: 0 20px;
+  background-color: rgb(
+    222,
+    230,
+    238
+  ); /*gives the whole body the background-color in choosing*/
+  color: hsl(0, 0%, 13%); /*decides the text color*/
+  font-family: "Segoe UI"; /*decides the font of the text*/
+  line-height: 1.6; /*decide the text height*/
+  margin: 0; /*take away all the space which is outside the body*/
+  padding: 0 20px; /*makes 20px space within the body on left and right side*/
 }
 
-/* Trin 2: farver til overskrifter og links */
+/* Trin 2: decides the colors to the headlines*/
 h1,
 h2,
 h3 {
-  color: hsl(210, 100%, 20%); /* mørk blå – giver et professionelt udtryk */
+  color: hsl(210, 100%, 20%); /* makes the same blue color as the headlines*/
 }
 
-/* Links i normal tilstand */
+/* here the attributes of the links are decided*/
 a {
-  color: rgb(0, 102, 204); /* klar blå */
-  text-decoration: none; /* fjerner understregning */
-  font-weight: bold; /* gør links mere synlige */
+  color: rgb(
+    0,
+    102,
+    204
+  ); /* gives the link a bright blue color so they stand out */
+  text-decoration: none; /* removes the underlining of the links */
+  font-weight: bold; /* makes the links bold */
 }
 
-/* Når musen holdes over link */
+/* all in here happens when the mouse hoover over anything with link*/
 a:hover {
-  color: rgb(0, 64, 128); /* mørkere blå når man holder musen over */
-  text-decoration: underline; /* tilføjer understregning ved hover */
+  color: rgb(
+    0,
+    64,
+    128
+  ); /* makes it a darker color when the mouse hoovers over*/
+  text-decoration: underline; /*adds the underlining when you hoover the mouse over*/
 }
 
-/* Trin 3: typografi og afstande */
+/* all changes in fonts and distance in h1 is written in here*/
 h1 {
   font-size: 2rem; /* stor, tydelig overskrift */
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 30px; /*gives it 30 px distance at the top of the margin*/
+  margin-bottom: 15px; /*gives it 15 px distance at the bottom of the margin*/
 }
 
+/* all changes in fonts and distance in h2 is written in here*/
 h2 {
-  font-size: 1.5rem; /* lidt mindre overskrift */
-  margin-top: 25px;
-  margin-bottom: 10px;
+  font-size: 1.5rem; /* gives it a bit smaller headline */
+  margin-top: 25px; /*gives it 25 px distance at the top of the margin*/
+  margin-bottom: 10px; /*gives it 10 px distance at the bottom of the margin*/
 }
 
+/* all changes in fonts and distance in the paragraphs is written in here*/
 p {
-  font-size: 1.1rem; /* lidt større end standard tekst */
-  margin-bottom: 15px;
+  font-size: 1.1rem; /* makes it slightly bigger than normal size text*/
+  margin-bottom: 15px; /*gives it 15 px distance at the bottom of the margin*/
 }
 
+/* all changes in fonts and distance in the table is written in here*/
 table {
-  border-collapse: collapse; /* fjerner dobbeltkanter */
-  width: 100%; /* tabel fylder hele bredden */
-  margin-top: 20px;
+  border-collapse: collapse; /*removes dobbelt edges*/
+  width: 100%; /*does that the table fills all of the width*/
+  margin-top: 20px; /*gives it 20 px distance at the top of the marg*/
 }
 
-table.schedule th,
+/*all changes in fonts and distance in all the table headers and the table cells inside the table
+that has a class called .schedule is written in here*/
+*/ table.schedule th,
 table.schedule td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
+  border: 1px solid #ccc; /*Adds a thin gray border around each cell*/
+  padding: 8px; /*Adds 8 pixels of space inside each table cell, between the text and the border*/
+  text-align: left; /*Aligns all text to the left side inside each cel*/
 }
 
+/*This targets all table header cells aka <th> elements and not just inside the .schedule table*/
 th {
-  background-color: #e8eef5; /* svag baggrund til tabeloverskrifter */
+  background-color: #e8eef5; /* makes a light background-color to the table headlines*/
 }
 
-/* Trin 4: centrering og layout */
+/* all changes in fonts and distance in main and sections are written in here*/
 main,
 section {
-  max-width: 900px; /* gør at teksten ikke bliver for bred på store skærme */
-  margin: 20px auto; /* centrerer indholdet vandret */
-  padding: 10px 16px 1px 16px; /* top, højre, bund, venstre */
+  max-width: 900px; /* does so the text doestn get to wide on big screens*/
+  margin: 20px auto; /* centers it all horisontal*/
+  padding: 10px 16px 1px 16px; /*top, right, buttom, left distance*/
 }
 
+/* all changes in fonts and distance in the headers are written in here*/
 header {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  text-align: center; /*making sure the text is centered*/
+  margin-top: 10px; /*gives it 10px distance at the top of the margin*/
+  margin-bottom: 10px; /*gives it 10 px distance at the bottom of the margin*/
 }
+
+/* all changes in fonts and distance in the footers are written in here*/
 footer {
-  text-align: center; /* centrerer tekst i top og bund */
-  color: #444;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align: center; /* makes sure the text i centeret*/
+  color: #444; /*decides the color of the text*/
+  font-size: 1rem; /*decides the size of the text*/
+  line-height: 1.6; /*decides the hight of the line*/
+  margin-top: 20px; /*gives it 20px distance at the top of the margin*/
+  margin-bottom: 20px; /*gives it 20 px distance at the bottom of the margin*/
 }
 
+/* all changes in fonts and distance in the pictures/images are written in here*/
 img {
-  display: block; /* fjerner mellemrum under billeder */
-  margin: 10px auto; /* centrerer billederne */
-  border-radius: 8px; /* afrundede hjørner */
-  max-width: 100%;
-  height: auto;
+  display: block; /* remove the distance between the pictures*/
+  margin: 10px auto; /*centers the pictures*/
+  border-radius: 8px; /*gives it rounded corners*/
+  max-width: 100%; /*prevents the image from being wider than its container*/
+  height: auto; /* keeps the image’s proportions when resizing*/
 }
 
-/* Fjern kanter på billedgalleriet og centrér billederne */
+/*remove borders from the image gallery and center the images*/
 section table {
-  border-collapse: collapse;
-  width: auto;
-  margin: 20px auto;
-  background: transparent;
-  box-shadow: none;
+  border-collapse: collapse; /* merges table borders into single lines (no double borders) */
+  width: auto; /* lets the table width adjust automatically to its content */
+  margin: 20px auto; /* adds 20px vertical space and centers the table horizontally */
+  background: transparent; /* makes the table background see-through (no color) */
+  box-shadow: none; /* removes any shadow effect around the table */
 }
-
+/* all changes in fonts and distance in all <td> cells inside a <table> that is 
+inside a <section>  are written in here*/
 section table td {
-  border: none; /* ingen kant omkring billeder */
-  padding: 10px;
-  text-align: center;
+  border: none; /*  no borders around the pictures */
+  padding: 10px; /*adds 10px space inside hte cells around the content*/
+  text-align: center; /*centers the text inside the cells*/
 }
 
+/*here all the changes in fonts and distance in all <img> elements inside a 
+table that is inside a section*/
 section table img {
-  display: block;
-  margin: 0 auto;
-  height: 200px;
-  border-radius: 40px; /* bløde hjørner */
+  display: block; /*removes small gaps*/
+  margin: 0 auto; /*centers the image within its table cell */
+  height: 200px; /* sets image height to 200px */
+  border-radius: 40px; /* makes soft corners*/
 }
 
+/*here all the changes in fonts and distance in all <section> elements, and 
+every element with the class .card, and all elements with the class .card inside a <footer>*/
 section,
 .card,
 footer .card {
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  background-color: #c1edf5;
-  padding: 20px;
+  border: 1px solid #e5e7eb; /* adds a border with this color around the box*/
+  border-radius: 10px; /* makes slightly rounded corners*/
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* adds a shadow to the box*/
+  background-color: #c1edf5; /* gives the box this background color*/
+  padding: 20px; /* adds 20px of space inside between the border and the content*/
 }
 
-/* Fotos-sektion: brug samme hvide kort-look (kommer fra 'section, footer, .card') */
-/* Overstyr tabel-stilen kun inde i denne sektion */
+/* Photo-section: use the same white card look, and overrun the table stil only in this section*/
 .photos table {
-  border-collapse: separate;
-  border-spacing: 24px 0; /* luft mellem billederne */
-  width: 100%;
-  margin: 10px 0;
-  background: transparent;
-  box-shadow: none;
+  border-collapse: separate; /* makes table cells separate*/
+  border-spacing: 24px 0; /* adds horizontal space (24px) between cells and none vertically*/
+  width: 100%; /*makes the table stretch across the full width of its container*/
+  margin: 10px 0; /*adds 10px vertical space above and below the table*/
+  background: transparent; /*makes it see-through, by removing all the background-color*/
+  box-shadow: none; /*removes any shadow effect*/
 }
 
+/* all changes in fonts and distance in the photos <td> and <th> inside .photos are 
+written in here*/
 .photos td,
 .photos th {
-  border: none; /* fjern de grå linjer i billedtabellen */
-  padding: 0;
-  text-align: center;
+  border: none; /* remove the grey lines in the picture table*/
+  padding: 0; /*removes inner spacing*/
+  text-align: center; /*centers the content in the cells */
 }
 
-/* Lidt luft under teksten i fotos-sektionen */
+/*this one gives a little air under the text in the photos section*/
 .photos p {
-  margin-bottom: 12px;
+  margin-bottom: 12px; /* gives 12px space under each paragraph */
 }
