@@ -1,4 +1,7 @@
-/* Trin 5 – professionel navigation i afdæmpede farver */
+* {
+  box-sizing: border-box;
+}
+
 nav {
   background-color: hsl(197, 86%, 77%); /* mørk grå baggrund */
   text-align: center;
